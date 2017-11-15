@@ -2,3 +2,8 @@ httpry
 callgrind.log
 massif.log
 gmon.out
+cmake-build-debug
+CMakeFiles
+cmake_install.cmake
+httpry.cbp
+CMakeCache.txt

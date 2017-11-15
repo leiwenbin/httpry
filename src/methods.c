@@ -141,8 +141,6 @@ int is_request_method(const char *str) {
 /* Wrapper function to free allocated memory at program termination */
 void free_methods() {
         free_node(methods);
-
-        return;
 }
 
 /* Recursively free all children of the parameter node */

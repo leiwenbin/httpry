@@ -100,7 +100,6 @@ void parse_format_string(char *str) {
         PRINT("----------------------------");
 #endif
 
-        return;
 }
 
 /* Insert a new node into the hash table */
@@ -160,8 +159,6 @@ void insert_value(char *name, char *value) {
 
         if ((node = get_field(name)))
                 node->value = value;
-
-        return;
 }
 
 /* Given the name, return a value from the hash */
@@ -240,8 +237,6 @@ void print_format_values() {
                 node = node->list;
         }
         printf("\n");
-
-        return;
 }
 
 /* Free all allocated memory for format structure; only called at
@@ -260,7 +255,6 @@ void free_format() {
                 free(prev);
         }
 
-        return;
 }
 
 /* Lookup a particular node in hash; return pointer to node
